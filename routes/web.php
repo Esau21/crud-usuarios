@@ -28,4 +28,4 @@ Route::get('/nuevo', 'UserController@create')->name('nuevo');
 Route::post('/usuarios/crear', 'UserController@store')->name('/usuarios/crear');
 Route::get('usuarios/{id}/editar', 'UserController@edit')->name('editar');
 Route::put('usuarios/{id}','UserController@update');
-Route::delete('/usuarios/{id}/eliminar', 'UserController@destroy');
+Route::delete('/usuarios/{id}/eliminar', 'UserController@delete');
